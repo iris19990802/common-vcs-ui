@@ -1,0 +1,36 @@
+.bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 2px;
+    background: #29d;
+    z-index: 2000;
+}
+
+.spinner {
+    position: fixed;
+    z-index: 2000;
+    top: 15px;
+    right: 15px;
+}
+
+@keyframes nprogress-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-icon {
+    width: 18px;
+    height: 18px;
+    border: solid 2px transparent;
+    border-top-color: #29d;
+    border-left-color: #29d;
+    border-radius: 50%;
+    animation: nprogress-spinner 400ms linear infinite;
+}
